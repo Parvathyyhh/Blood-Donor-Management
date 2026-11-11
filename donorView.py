@@ -85,15 +85,15 @@ class BloodDonorManager:
             print(e)
 
 donor_instance=BloodDonorManager()
-# donor_instance.post(
-#     name="Anu",
-#     blood_group="O+",
-#     phone="9806850110",
-#     city="Kochi",
-#     last_donation=datetime.today()
-# )
+donor_instance.post(
+    name="Anu",
+    blood_group="O+",
+    phone="9806850110",
+    city="Kochi",
+    last_donation=datetime.today()
+)
 donor_instance.get()
-#donor_instance.retrieve(id=1)
-#donor_instance.delete(id=7)
+donor_instance.retrieve(id=1)
+donor_instance.delete(id=7)
 donor_instance.put(id=1,name="Anu",blood_group="O-",phone="9806850110",city="Kochi",last_donation=datetime.today())
-# self.connection.close()
+self.connection.close()
